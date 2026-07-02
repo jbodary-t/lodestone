@@ -157,6 +157,11 @@ ENV/
 env.bak/
 venv.bak/
 
+# Frontend artifacts
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
 # Spyder project settings
 .spyderproject
 .spyproject

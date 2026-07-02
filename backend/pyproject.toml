@@ -1,0 +1,20 @@
+[project]
+name = "lodestone-backend"
+version = "0.1.0"
+description = "Lodestone backend API built with FastAPI, SQLAlchemy, and PostgreSQL."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.111.2",
+  "uvicorn[standard]>=0.24.0",
+  "SQLAlchemy>=2.0",
+  "psycopg[binary]>=3.2",
+  "python-dotenv>=1.0",
+  "passlib[bcrypt]==1.7.4",
+  "pydantic-settings>=2.0",
+  "email-validator>=2.0"
+]
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
