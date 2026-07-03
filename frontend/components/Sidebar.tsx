@@ -2,8 +2,15 @@ import Link from 'next/link';
 
 const navigation = [
   { label: 'Dashboard', href: '/' },
+  { label: 'Guide', href: '/guide' },
+  { label: 'Companion', href: '/companion' },
   { label: 'Journey', href: '/journey' },
-  { label: 'Activities', href: '/activities' },
+  { label: 'Account', href: '/account' },
+  { label: 'Atlas', href: '/atlas' },
+  { label: 'Navigator', href: '/navigator' },
+  { label: 'Chronicle', href: '/chronicle' },
+  { label: 'Forecast', href: '/forecast' },
+  { label: 'Advisor', href: '/advisor' },
   { label: 'Settings', href: '/settings' },
 ];
 

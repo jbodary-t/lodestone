@@ -92,5 +92,6 @@ class ActivityRead(ActivityBase):
     parents: list[uuid.UUID] = Field(default_factory=list)
     children: list[uuid.UUID] = Field(default_factory=list)
 
-    class Config:
-        orm_mode = True
+    model_config = {
+        "from_attributes": True,
+    }

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './styles/globals.css';
+import { TopNav } from '@/components/TopNav';
+import { GuideEngineProvider } from '@/components/GuideEngineContext';
 
 export const metadata: Metadata = {
   title: 'Lodestone',
@@ -8,8 +10,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className="min-h-screen bg-background text-slate-100 antialiased">
+        <GuideEngineProvider>
+          <TopNav />
+          <main>{children}</main>
+        </GuideEngineProvider>
+      </body>
     </html>
   );
 }

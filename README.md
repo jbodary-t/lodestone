@@ -3,18 +3,18 @@ Open-source progression optimization for RuneScape. Data-driven. Explainable. Bu
 
 ## Local Development
 
-Use the included scripts to start the backend and frontend together.
+Use the included repository-level scripts to start the backend and frontend together.
 
 PowerShell:
 
 ```powershell
-.\scripts\start-dev.ps1
+.\scripts\dev.ps1
 ```
 
 macOS / Linux:
 
 ```bash
-./scripts/start-dev.sh
+./scripts/dev.sh
 ```
 
 ## Environment

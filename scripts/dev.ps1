@@ -34,7 +34,7 @@ npm install
 Pop-Location
 
 Write-Host "[lodestone] Starting backend and frontend..."
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $PWD\backend; ..\.venv\Scripts\python.exe -m uvicorn app.main:app --host 0.0.0.0 --port 8000"
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $PWD\backend; & \"..\.venv\Scripts\python.exe\" -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload"
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $PWD\frontend; npm run dev -- --hostname 0.0.0.0 --port 3000"
-Write-Host "[lodestone] Backend: http://localhost:8000"
-Write-Host "[lodestone] Frontend: http://localhost:3000"
+Write-Host "[lodestone] Backend: http://127.0.0.1:8000"
+Write-Host "[lodestone] Frontend: http://127.0.0.1:3000"

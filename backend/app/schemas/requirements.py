@@ -29,8 +29,9 @@ class RequirementBase(BaseModel):
     type: RequirementType
     description: str | None = None
 
-    class Config:
-        orm_mode = True
+    model_config = {
+        "from_attributes": True,
+    }
 
 
 class SkillRequirement(RequirementBase):

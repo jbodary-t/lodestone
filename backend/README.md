@@ -4,20 +4,23 @@ This repository contains the Lodestone backend API built with FastAPI, SQLAlchem
 
 ## Development
 
-1. Create a Python 3.12 virtual environment.
-2. Install dependencies:
+From the repository root, run the included centralized startup script:
 
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
+PowerShell:
 
-3. Start the application:
+```powershell
+.\scripts\dev.ps1
+```
 
-   ```bash
-   uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-   ```
+macOS / Linux:
 
-4. Open the API documentation at `http://localhost:8000/docs`.
+```bash
+./scripts/dev.sh
+```
+
+This script creates or updates the Python virtual environment, installs backend and frontend dependencies, and starts the backend and frontend development servers.
+
+Open the API documentation at `http://127.0.0.1:8000/docs`.
 
 ## Docker
 
